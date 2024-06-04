@@ -4,7 +4,7 @@ class CalcController < ApplicationController
   end
 
   def square_res
-    @target_num = params.fetch("num").to_i
+    @target_num = params.fetch("num").to_f
 
     @res = @target_num * @target_num
 
@@ -16,7 +16,7 @@ class CalcController < ApplicationController
   end
 
   def square_root_res
-    @target_num = params.fetch("num").to_i
+    @target_num = params.fetch("num").to_f
     
     @res = Math.sqrt(@target_num)
 
